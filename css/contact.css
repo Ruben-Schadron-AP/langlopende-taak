@@ -1,0 +1,69 @@
+* {
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+    color: rgb(60,60,60);
+    box-sizing: border-box;
+  }
+  
+  .padded {
+    padding: 2%;
+  }
+  
+  form input, 
+  form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid rgb(220,220,220);
+  }
+  
+  textarea {
+    min-height: 4rem;
+  }
+  
+  form label {
+    margin: 1rem 0 0; 
+    display: inline-block; /* This ads margin above each label. You need display inline block, because by default it's an inline element that won't accept vertical margin.*/
+    color: #6C7A89;
+    font-weight: bold;
+  }
+  
+  /* Checkbox styles */
+  
+  form input[type="checkbox"]{
+    margin: 0 1em;
+    width: auto;
+    display:inline-block;
+  }
+  
+  .checkboxes p {
+    margin:0.5rem 0;
+    font-size: 0.8rem;
+  }
+  .checkboxes {
+    margin: 0 0 1.5em;
+    padding:0!important;
+  }
+  
+  form input[type="submit"] {
+    background-color:#6C7A89;
+    color:white;
+    border: none;
+  }
+   
+  /* Style 2 remove comment to show alternative 
+  
+  form input, 
+  form textarea {
+    border: 2px solid #6C7A89;
+    padding:1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  
+  form label {
+    text-transform: uppercase;
+  }
+  
+  */
