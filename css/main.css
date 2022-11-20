@@ -3,6 +3,15 @@ body{
     background-color: rgb(189, 159, 159);
     
 }
-header, p, footer{
-    color:rgb(140, 109, 109);
+header, p{
+    color: #63A6A6;
+}
+
+footer {
+    color: rgba(124, 124, 124, 0.649);
+}
+
+a {
+    text-decoration: none;
+    color: #63A6A6;
 }
