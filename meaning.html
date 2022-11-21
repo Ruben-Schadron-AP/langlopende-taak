@@ -1,29 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="/assets/icons/ap_logo.png">
+    <title>Meaning</title>
+    <!-- site icon -->
+    <link rel="icon" type="image/x-icon" href="/assets/icons/ap_logo.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Eigen geschreven CSS en javascript -->
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/menu.css">
 
 </head>
-<body>
-    <nav>
+
+<body class="p-3 container">
+    <header></header>
+
+    <nav class="navbar">
         <ul class="mul">
-            <li class="mli"><a href="index.html">Home</a></li>
-            <li class="mli"><a class="mactive" href="meaning.html">Meaning</a></li>
-            <li class="mli"><a href="apps.html">Apps</a></li>
-            <li class="mli"><a href="hubs.html">Hubs</a></li>
-            <li class="mli"><a href="routines.html">Routines</a></li>
-            <li class="mli"><a href="devices.html">Devices</a></li>
-            <li class="mli"><a href="proandcons.html">Voor en nadelen</a></li>
-          </ul>
+            <li class="mli"><a href="/index.html">Home</a></li>
+            <li class="mli"><a class="mactive" href="/meaning.html">Meaning</a></li>
+            <li class="mli"><a href="/apps.html">Apps</a></li>
+            <li class="mli"><a href="/hubs.html">Hubs</a></li>
+            <li class="mli"><a href="/routines.html">Routines</a></li>
+            <li class="mli"><a href="/devices.html">Devices</a></li>
+            <li class="mli"><a href="/proandcons.html">Voor en nadelen</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
     </nav>
+
     <main>
+        <h1 class="text-center text-decoration-underline">᲼Meaning᲼</h1>
+        <h2>Op deze pagina ga ik een korte uitleg geven over wat een slim huis is en wat je er allemaal mee kunt doen</h2>
+        <br><br>
+        <div class="row">
+            <div class="col-7">
+                <h3>Betekenis</h3>
+                <h4>
+                    Smart house betekend letterlijk vertaald &quot;Slim Huis&quot;<br><br>
+                    Het huis kan dus verschillende dingen automatisch doen of op een (spraak)commando doen. Je kan dus als je moet opstaan een <a class="siteref" href="/routines.html">routine</a> instellen zodat er al dingen gedaan kunnen worden terwijl je opstaat. Alles over de speciale dingen in een slim huis en hoe je het moet gebruiken ga ik verder vertellen op een van de andere pagina's.
+                </h4>
+            </div>
+
+            <div class="col-5">
+                <figure>
+                    <img src="/assets/images/meaning.jpg" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div> <br><br>
     </main>
-    <footer>&copy; Ruben Schadron AP</footer>
+
+
+    <aside>
+
+    </aside>
+
+    <footer>&copy; Ruben Schadron | Student AP Hogeschool Antwerpen</footer>
 </body>
+
 </html>
