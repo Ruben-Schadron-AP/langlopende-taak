@@ -11,10 +11,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Eigen geschreven CSS en javascript -->
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -23,7 +25,7 @@
 
 </head>
 
-<body class="p-3 m-0 border-0 bd-example">
+<body class="p-3 container">
     <header></header>
 
     <nav class="navbar">
@@ -46,142 +48,231 @@
         <!--  -->
 
         <!-- slideshow from the pages -->
-        <section class="container text-center my-3">
-            <section class="row mx-auto my-auto justify-content-center">
-                <section id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <section class="carousel-inner" role="listbox">
-                        <section class="carousel-item active">
-                            <figure class="col-md-4 card">
+        <div class="container text-center my-3 row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!-- pice 1 -->
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/meaning.html">
                                     <img src="/assets/carousel/meaning.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Meaning</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/apps.html">
                                     <img src="/assets/carousel/apps.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Apps</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/hubs.html">
                                     <img src="/assets/carousel/hubs.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Hubs</figcaption>
                                 </a>
                             </figure>
-                        </section>
-                        <section class="carousel-item">
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
+                                <a href="/routines.html">
+                                    <img src="/assets/carousel/routine.jpg" class="img-fluid card-img">
+                                    <figcaption class="card-img-overlay">Routines</figcaption>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- pice 2 -->
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/apps.html">
                                     <img src="/assets/carousel/apps.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Apps</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/hubs.html">
                                     <img src="/assets/carousel/hubs.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Hubs</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/routines.html">
                                     <img src="/assets/carousel/routine.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Routines</figcaption>
                                 </a>
                             </figure>
-                        </section>
-                        <section class="carousel-item">
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
+                                <a href="/devices.html">
+                                    <img src="/assets/carousel/devices.jpg" class="img-fluid card-img">
+                                    <figcaption class="card-img-overlay">Devices</figcaption>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- pice 3 -->
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/hubs.html">
                                     <img src="/assets/carousel/hubs.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Hubs</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/routines.html">
                                     <img src="/assets/carousel/routine.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Routines</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/devices.html">
                                     <img src="/assets/carousel/devices.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Devices</figcaption>
                                 </a>
                             </figure>
-                        </section>
-                        <section class="carousel-item">
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
+                                <a href="/proandcons.html">
+                                    <img src="/assets/carousel/proandcons.jpg" class="img-fluid card-img">
+                                    <figcaption class="card-img-overlay">Voor en nadelen</figcaption>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- pice 4 -->
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/routines.html">
                                     <img src="/assets/carousel/routine.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Routines</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/devices.html">
                                     <img src="/assets/carousel/devices.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Devices</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/proandcons.html">
                                     <img src="/assets/carousel/proandcons.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Voor en nadelen</figcaption>
                                 </a>
                             </figure>
-                        </section>
-                        <section class="carousel-item">
-                            <figure class="col-md-4 card">
-                                <a href="/devices.html">
-                                    <img src="/assets/carousel/devices.jpg" class="img-fluid card-img">
-                                    <figcaption class="card-img-overlay">Devices</figcaption>
-                                </a>
-                            </figure>
-                            <figure class="col-md-4 card">
-                                <a href="/proandcons.html">
-                                    <img src="/assets/carousel/proandcons.jpg" class="img-fluid card-img">
-                                    <figcaption class="card-img-overlay">Voor en nadelen</figcaption>
-                                </a>
-                            </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/meaning.html">
                                     <img src="/assets/carousel/meaning.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Meaning</figcaption>
                                 </a>
                             </figure>
-                        </section>
-                        <section class="carousel-item">
-                            <figure class="col-md-4 card">
+                        </div>
+                    </div>
+                    <!-- pice 5 -->
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <figure class="card">
+                                <a href="/devices.html">
+                                    <img src="/assets/carousel/devices.jpg" class="img-fluid card-img">
+                                    <figcaption class="card-img-overlay">Devices</figcaption>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/proandcons.html">
                                     <img src="/assets/carousel/proandcons.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Voor en nadelen</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/meaning.html">
                                     <img src="/assets/carousel/meaning.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Meaning</figcaption>
                                 </a>
                             </figure>
-                            <figure class="col-md-4 card">
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
                                 <a href="/apps.html">
                                     <img src="/assets/carousel/apps.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Apps</figcaption>
                                 </a>
                             </figure>
-                        </section>
-                        <a class="carousel-control-prev w-aut btn-small" href="#recipeCarousel" role="button"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </a>
-                        <a class="carousel-control-next w-aut" href="#recipeCarousel" role="button"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </a>
-                    </section>
-                </section>
-            </section>
-        </section>
+                        </div>
+                    </div>
+                    <!-- pice 6 -->
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <figure class="card">
+                                <a href="/proandcons.html">
+                                    <img src="/assets/carousel/proandcons.jpg" class="img-fluid card-img">
+                                    <figcaption class="card-img-overlay">Voor en nadelen</figcaption>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
+                                <a href="/meaning.html">
+                                    <img src="/assets/carousel/meaning.jpg" class="img-fluid card-img">
+                                    <figcaption class="card-img-overlay">Meaning</figcaption>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
+                                <a href="/apps.html">
+                                    <img src="/assets/carousel/apps.jpg" class="img-fluid card-img">
+                                    <figcaption class="card-img-overlay">Apps</figcaption>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="card">
+                                <a href="/hubs.html">
+                                    <img src="/assets/carousel/hubs.jpg" class="img-fluid card-img">
+                                    <figcaption class="card-img-overlay">Hubs</figcaption>
+                                </a>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
 
         <!-- about me -->
 
