@@ -16,13 +16,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Eigen geschreven CSS en javascript -->
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/menu.css">
     <script src="/js/index.js"></script>
-
 </head>
 
 <body class="p-3 container">
@@ -30,7 +27,9 @@
 
     <nav class="navbar navbar-expand-lg bg-transparant">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- <figure>
+                <img src="/assets/icons/AP_logo_letters.png" alt="AP logo" height="40">
+            </figure> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -39,40 +38,38 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link mactive" aria-current="page" href="/index.html">Home</a>
+                        <a class="nav-link btn btn-danger btn-outline-warning" aria-current="page" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/meaning.html">Meaning</a>
+                        <a class="nav-link btn btn-outline-warning" href="/meaning.html">Meaning</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/apps.html">Apps</a>
+                        <a class="nav-link btn btn-outline-warning" href="/apps.html">Apps</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/hubs.html">Hubs</a>
+                        <a class="nav-link btn btn-outline-warning" href="/hubs.html">Hubs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/routines.html">Routines</a>
+                        <a class="nav-link btn btn-outline-warning" href="/routines.html">Routines</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/devices.html">Devices</a>
+                        <a class="nav-link btn btn-outline-warning" href="/devices.html">Devices</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/proandcons.html">Voor en nadelen</a>
+                        <a class="nav-link btn btn-outline-warning" href="/proandcons.html">Voor en nadelen</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 
-    <main>
-        <!--  -->
-
+    <main class="container">
         <!-- slideshow from the pages -->
-        <div class="container text-center my-3 row mx-auto my-auto justify-content-center">
+        <div class="text-center my-3 row mx-auto my-auto justify-content-center">
             <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <!-- pice 1 -->
@@ -287,10 +284,12 @@
 
                     </div>
                 </div>
+                <!-- button back -->
                 <a class="carousel-control-prev w-aut" href="#recipeCarousel" role="button"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </a>
+                <!-- button next -->
                 <a class="carousel-control-next w-aut" href="#recipeCarousel" role="button"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -298,9 +297,30 @@
             </div>
         </div>
 
+        <hr>
+
         <!-- about me -->
-        <br><br><br>
         <h2>Over mezelf</h2>
+            <div class="row">
+              <div class="col-md-9">
+                <p>
+                    Ik ben Ruben Schadron. 
+                    Ik ben 18 jaar oud en woon in zwijndrecht. 
+                    Ik studeer op de AP Hogeschool in Antwerpen. 
+                    Buiten school ga ik ook nog lopen en ben ik leider in de jeugdbeweging. <br><br> 
+                    
+                    Ik heb dit onderwerp gekozen omdat ik bezig ben met de technologie van vandaag. 
+                    Zelf ben ik ook van plan om later mijn huis helemaal te gaan automatizeren zodat ik altijd alles van overal kan bedienen.
+
+                </p>
+              </div>
+                <div class="col-md-3">
+                    <figure>
+                        <img src="/assets/images/pf.jpg" alt="Foto van Ruben Schadron" class="img-fluid">
+                    </figure>
+                </div>
+            </div>
+
 
     </main>
 
