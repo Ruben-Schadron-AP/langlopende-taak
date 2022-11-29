@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Voor - en nadelen</title>
     <!-- site icon -->
-    <link rel="icon" type="image/x-icon" href="/assets/icons/ap_logo.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/ap_logo.ico">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Eigen geschreven CSS en javascript -->
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    <!-- Eigen geschreven CSS en javascript -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/proandcons.css">
+
 </head>
 
 <body class="p-3 container">
@@ -25,7 +24,7 @@
 
     <nav class="navbar navbar-expand-lg bg-transparant">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/assets/icons/AP_logo_letters.png" height="30" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./assets/icons/AP_logo_letters.png" height="30" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -34,25 +33,39 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link mactive" aria-current="page" href="/index.html">Home</a>
+                        <a class="nav-link btn btn-outline-warning" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/meaning.html">Meaning</a>
+                        <a class="nav-link btn btn-outline-warning" href="./overzicht.html">Overzicht</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/apps.html">Apps</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn btn-danger btn-outline-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Topic's
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a class="nav-link btn btn-outline-warning" href="./meaning.html">Meaning</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link btn btn-outline-warning" href="./apps.html">Apps</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link btn btn-outline-warning" href="./hubs.html">Hubs</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link btn btn-outline-warning" href="./routines.html">Routines</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link btn btn-outline-warning" href="./devices.html">Devices</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link btn btn-danger btn-outline-warning" aria-current="page" href="./proandcons.html">Voor en nadelen</a>
+                            </li>
+                        </ul>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/hubs.html">Hubs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/routines.html">Routines</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/devices.html">Devices</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/proandcons.html">Voor en nadelen</a>
+                        <a class="nav-link btn btn-outline-warning" href="./contact.html">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -65,7 +78,8 @@
 
     <main>
         <h1 class="text-center text-decoration-underline">&nbsp;Voor en nadelen&nbsp;</h1>
-        <table class="table caption-top table-striped table-responsive">
+
+        <table class="table caption-top table-responsive table-borderless">
             <thead>
                 <tr>
                     <th scope="col" colspan="2" class="text-center">Voor en nadelen van een smart house</th>
@@ -73,30 +87,30 @@
                 </tr>
                 <tr>
                     <th scope="col" rowspan="1"></th>
-                    <td>Voordelen</td>
-                    <td>Nadelen</td>
+                    <td id="pro">Voordelen</td>
+                    <td id="cons">Nadelen</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th>Gemak</th>
-                    <td>Heel gemakkelijk als het ingesteld is dat alles outomatich gebeurd</td>
-                    <td>Er kan veel tijd in kruipen met het instellen</td>
+                    <th id="th">Gemak</th>
+                    <td id="pro">Heel gemakkelijk als het ingesteld is dat alles outomatich gebeurd</td>
+                    <td id="cons">Er kan veel tijd in kruipen met het instellen</td>
                 </tr>
                 <tr>
-                    <th>Efficiëntie en kosten</th>
-                    <td>Het helpt je met besparen en het zorgt ervoor dat je niet alles de hele dag aan laat staan.</td>
-                    <td>Kost veel om alles aan te kopen</td>
+                    <th id="th">Efficiëntie en kosten</th>
+                    <td id="pro">Het helpt je met besparen en het zorgt ervoor dat je niet alles de hele dag aan laat staan.</td>
+                    <td id="cons">Kost veel om alles aan te kopen</td>
                 </tr>
                 <tr>
-                    <th>Veiligheid</th>
-                    <td>Je kan alles van veiligheidssystemen online opvolgen en beheren</td>
-                    <td>Alles gebeurd via het internet dus je bent niet 100% bevieligd tegen inbrekers</td>
+                    <th id="th">Veiligheid</th>
+                    <td id="pro">Je kan alles van veiligheidssystemen online opvolgen en beheren</td>
+                    <td id="cons">Alles gebeurd via het internet dus je bent niet 100% bevieligd tegen inbrekers</td>
                 </tr>
                 <tr>
-                    <th>Privacy</th>
-                    <td>Je kan het altijd opvragen en laten verwijderen</td>
-                    <td>Het staat online bij andere bedrijven. Dit wilt zeggen dat het bedrijf er verkeerde dingen mee kan doen en dat het in verkeerde handen terecht kan komen</td>
+                    <th id="th">Privacy</th>
+                    <td id="pro">Je kan het altijd opvragen en laten verwijderen</td>
+                    <td id="cons">Het staat online bij andere bedrijven. Dit wilt zeggen dat het bedrijf er verkeerde dingen mee kan doen en dat het in verkeerde handen terecht kan komen</td>
                 </tr>
         </table>
     </main>

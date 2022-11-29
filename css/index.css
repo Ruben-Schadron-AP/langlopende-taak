@@ -33,7 +33,7 @@ transform: translateX(0);
 }
 
 .card {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(160, 110, 23, 0.512);
 }
 
 .carousel-control-prev, .carousel-control-next {
