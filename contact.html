@@ -106,7 +106,8 @@
                                 enctype="multipart/form-data">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_next" value="http://rubenschadron.gpro.apstudent.be/thanks.html">
-            
+                                <input type="hidden" name="_subject" value="Mail from gpro site for owner">
+
                                 <fieldset class="row g-3 mb-3">
                                     <legend class="text-uppercase fs-6 fw-bolder pt-3">Gegevens</legend>
                                     <div class="col-md-6">
@@ -118,18 +119,15 @@
                                         <input type="text" class="form-control" name="Achternaam" id="lastName" required>
                                     </div>
                                     <div class="col">
-                                        <label for="mail" class="form-label">E-mail <span>*</span></label>
-                                        <input type="email" class="form-control" id="mail" required
-                                            placeholder="example@example.com">
+                                        <label for="email" class="form-label">E-mail <span>*</span></label>
+                                        <input type="email" class="form-control" name="email" id="mail" require placeholder="example@example.com">
                                     </div>
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                            style="height: 100px"></textarea>
-                                        <label for="floatingTextarea2" name="message">Je probleem</label>
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="message"></textarea>
+                                        <label for="floatingTextarea">Type hier je bericht.</label>
                                     </div>
-            
                                     <div class="col">
-                                        <label for="formFile" class="form-label">Voeg bestanden toe</label>
+                                        <label for="formFile" class="form-label">Voeg bestanden toe indien nodig</label>
                                         <input class="form-control" type="file" id="formFile" name="attachment">
                                     </div>
                                 </fieldset>
@@ -157,6 +155,7 @@
                                 enctype="multipart/form-data">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_next" value="http://rubenschadron.gpro.apstudent.be/thanks.html">
+                                <input type="hidden" name="_subject" value="Mail from gpro site for webmaster">
             
                                 <fieldset class="row g-3 mb-3">
                                     <legend class="text-uppercase fs-6 fw-bolder pt-3">Gegevens</legend>
@@ -174,11 +173,9 @@
                                             placeholder="example@example.com">
                                     </div>
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                            style="height: 100px"></textarea>
-                                        <label for="floatingTextarea2" name="message">Je probleem</label>
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="message"></textarea>
+                                        <label for="floatingTextarea">Type hier je bericht.</label>
                                     </div>
-            
                                     <div class="col">
                                         <label for="formFile" class="form-label">Voeg bestanden toe</label>
                                         <input class="form-control" type="file" id="formFile" name="attachment">
