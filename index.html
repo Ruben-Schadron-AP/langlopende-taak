@@ -1,117 +1,134 @@
 <!DOCTYPE html>
-<html lang="nl-BE">
+<html lang="nl-BE" style="color-scheme: dark;">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
     <title>Home</title>
     <!-- site icon -->
-    <link rel="icon" type="image/x-icon" href="./assets/icons/ap_logo.ico">
+    <link rel="icon" type="image/x-icon" href="assets/icons/ap_logo.ico">
     <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    <!-- Eigen geschreven CSS en javascript -->
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script> <!-- Eigen geschreven CSS en javascript -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/dl.js" defer></script>
+        </head>
 
 <body class="p-3 container">
-    <header></header>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparant">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/icons/AP_logo_letters.png" height="30"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <div class="darkLight-searchBox">
+                                <div class="dark-light">
+                                    <i class="bi moon bi-moon" ></i>
+                                    <i class="bi sun bi-sun"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-danger btn-outline-warning" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning" href="overzicht.html">Overzicht</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn btn-outline-warning" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topic's
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a class="nav-link btn btn-outline-warning" href="meaning.html">Meaning</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link btn btn-outline-warning" href="apps.html">Apps</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link btn btn-outline-warning" href="hubs.html">Hubs</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link btn btn-outline-warning" href="routines.html">Routines</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link btn btn-outline-warning" href="devices.html">Devices</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link btn btn-outline-warning" href="proandcons.html">Voor en
+                                        nadelen</a>
+                                </li>
+                            </ul>
+                        </li>
 
-    <nav class="navbar navbar-expand-lg bg-transparant">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./assets/icons/AP_logo_letters.png" height="30" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-danger btn-outline-warning" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-outline-warning" href="./overzicht.html">Overzicht</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn btn-outline-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Topic's
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item">
-                                <a class="nav-link btn btn-outline-warning" href="./meaning.html">Meaning</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a class="nav-link btn btn-outline-warning" href="./apps.html">Apps</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a class="nav-link btn btn-outline-warning" href="./hubs.html">Hubs</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a class="nav-link btn btn-outline-warning" href="./routines.html">Routines</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a class="nav-link btn btn-outline-warning" href="./devices.html">Devices</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a class="nav-link btn btn-outline-warning" href="./proandcons.html">Voor en nadelen</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-outline-warning" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
 
     <main class="container">
         <h1 class="text-center text-decoration-underline">&nbsp;Home&nbsp;</h1>
         <!-- slideshow from the pages -->
-        <div class="text-center my-3 row mx-auto my-auto justify-content-center">
+        <section class="text-center my-3 row mx-auto my-auto justify-content-center">
             <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <!-- pice 1 -->
                     <div class="carousel-item active">
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./meaning.html">
-                                    <img src="./assets/carousel/meaning.jpg" class="img-fluid card-img">
+                                <a href="meaning.html">
+                                    <img src="assets/carousel/meaning.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Meaning</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./apps.html">
-                                    <img src="./assets/carousel/apps.jpg" class="img-fluid card-img">
+                                <a href="apps.html">
+                                    <img src="assets/carousel/apps.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Apps</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./hubs.html">
-                                    <img src="./assets/carousel/hubs.jpg" class="img-fluid card-img">
+                                <a href="hubs.html">
+                                    <img src="assets/carousel/hubs.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Hubs</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./routines.html">
-                                    <img src="./assets/carousel/routine.jpg" class="img-fluid card-img">
+                                <a href="routines.html">
+                                    <img src="assets/carousel/routine.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Routines</figcaption>
                                 </a>
                             </figure>
@@ -121,32 +138,32 @@
                     <div class="carousel-item">
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./apps.html">
-                                    <img src="./assets/carousel/apps.jpg" class="img-fluid card-img">
+                                <a href="apps.html">
+                                    <img src="assets/carousel/apps.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Apps</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./hubs.html">
-                                    <img src="./assets/carousel/hubs.jpg" class="img-fluid card-img">
+                                <a href="hubs.html">
+                                    <img src="assets/carousel/hubs.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Hubs</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./routines.html">
-                                    <img src="./assets/carousel/routine.jpg" class="img-fluid card-img">
+                                <a href="routines.html">
+                                    <img src="assets/carousel/routine.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Routines</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./devices.html">
-                                    <img src="./assets/carousel/devices.jpg" class="img-fluid card-img">
+                                <a href="devices.html">
+                                    <img src="assets/carousel/devices.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Devices</figcaption>
                                 </a>
                             </figure>
@@ -156,32 +173,32 @@
                     <div class="carousel-item">
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./hubs.html">
-                                    <img src="./assets/carousel/hubs.jpg" class="img-fluid card-img">
+                                <a href="hubs.html">
+                                    <img src="assets/carousel/hubs.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Hubs</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./routines.html">
-                                    <img src="./assets/carousel/routine.jpg" class="img-fluid card-img">
+                                <a href="routines.html">
+                                    <img src="assets/carousel/routine.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Routines</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./devices.html">
-                                    <img src="./assets/carousel/devices.jpg" class="img-fluid card-img">
+                                <a href="devices.html">
+                                    <img src="assets/carousel/devices.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Devices</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./proandcons.html">
-                                    <img src="./assets/carousel/proandcons.jpg" class="img-fluid card-img">
+                                <a href="proandcons.html">
+                                    <img src="assets/carousel/proandcons.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Voor en nadelen</figcaption>
                                 </a>
                             </figure>
@@ -191,32 +208,32 @@
                     <div class="carousel-item">
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./routines.html">
-                                    <img src="./assets/carousel/routine.jpg" class="img-fluid card-img">
+                                <a href="routines.html">
+                                    <img src="assets/carousel/routine.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Routines</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./devices.html">
-                                    <img src="./assets/carousel/devices.jpg" class="img-fluid card-img">
+                                <a href="devices.html">
+                                    <img src="assets/carousel/devices.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Devices</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./proandcons.html">
-                                    <img src="./assets/carousel/proandcons.jpg" class="img-fluid card-img">
+                                <a href="proandcons.html">
+                                    <img src="assets/carousel/proandcons.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Voor en nadelen</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./meaning.html">
-                                    <img src="./assets/carousel/meaning.jpg" class="img-fluid card-img">
+                                <a href="meaning.html">
+                                    <img src="assets/carousel/meaning.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Meaning</figcaption>
                                 </a>
                             </figure>
@@ -226,32 +243,32 @@
                     <div class="carousel-item">
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./devices.html">
-                                    <img src="./assets/carousel/devices.jpg" class="img-fluid card-img">
+                                <a href="devices.html">
+                                    <img src="assets/carousel/devices.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Devices</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./proandcons.html">
-                                    <img src="./assets/carousel/proandcons.jpg" class="img-fluid card-img">
+                                <a href="proandcons.html">
+                                    <img src="assets/carousel/proandcons.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Voor en nadelen</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./meaning.html">
-                                    <img src="./assets/carousel/meaning.jpg" class="img-fluid card-img">
+                                <a href="meaning.html">
+                                    <img src="assets/carousel/meaning.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Meaning</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./apps.html">
-                                    <img src="./assets/carousel/apps.jpg" class="img-fluid card-img">
+                                <a href="apps.html">
+                                    <img src="assets/carousel/apps.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Apps</figcaption>
                                 </a>
                             </figure>
@@ -261,32 +278,32 @@
                     <div class="carousel-item">
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./proandcons.html">
-                                    <img src="./assets/carousel/proandcons.jpg" class="img-fluid card-img">
+                                <a href="proandcons.html">
+                                    <img src="assets/carousel/proandcons.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Voor en nadelen</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./meaning.html">
-                                    <img src="./assets/carousel/meaning.jpg" class="img-fluid card-img">
+                                <a href="meaning.html">
+                                    <img src="assets/carousel/meaning.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Meaning</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./apps.html">
-                                    <img src="./assets/carousel/apps.jpg" class="img-fluid card-img">
+                                <a href="apps.html">
+                                    <img src="assets/carousel/apps.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Apps</figcaption>
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-3">
                             <figure class="card">
-                                <a href="./hubs.html">
-                                    <img src="./assets/carousel/hubs.jpg" class="img-fluid card-img">
+                                <a href="hubs.html">
+                                    <img src="assets/carousel/hubs.jpg" class="img-fluid card-img">
                                     <figcaption class="card-img-overlay">Hubs</figcaption>
                                 </a>
                             </figure>
@@ -295,51 +312,46 @@
                     </div>
                 </div>
                 <!-- button back -->
-                <a class="carousel-control-prev w-aut" href="#recipeCarousel" role="button"
-                    data-bs-slide="prev">
+                <a class="carousel-control-prev w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </a>
                 <!-- button next -->
-                <a class="carousel-control-next w-aut" href="#recipeCarousel" role="button"
-                    data-bs-slide="next">
+                <a class="carousel-control-next w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </a>
             </div>
-        </div>
+        </section>
 
         <hr>
 
         <!-- about me -->
         <h2>Over mezelf</h2>
-            <div class="row">
-              <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-9">
                 <p>
-                    Ik ben Ruben Schadron. 
-                    Ik ben 18 jaar oud en woon in zwijndrecht. 
-                    Ik studeer op de AP Hogeschool in Antwerpen. 
-                    Buiten school ga ik ook nog lopen en ben ik leider in de jeugdbeweging. <br><br> 
-                    
-                    Ik heb dit onderwerp gekozen omdat ik bezig ben met de technologie van vandaag. 
-                    Zelf ben ik ook van plan om later mijn huis helemaal te gaan automatizeren zodat ik altijd alles van overal kan bedienen.
+                    Ik ben Ruben Schadron.
+                    Ik ben 18 jaar oud en woon in zwijndrecht.
+                    Ik studeer op de AP Hogeschool in Antwerpen.
+                    Buiten school ga ik ook nog lopen en ben ik leider in de jeugdbeweging. <br><br>
+
+                    Ik heb dit onderwerp gekozen omdat ik bezig ben met de technologie van vandaag.
+                    Zelf ben ik ook van plan om later mijn huis helemaal te gaan automatizeren zodat ik altijd alles van
+                    overal
+                    kan bedienen.
 
                 </p>
-              </div>
-                <div class="col-md-3">
-                    <figure>
-                        <img src="./assets/images/pf.jpg" alt="Foto van Ruben Schadron" class="img-fluid">
-                    </figure>
-                </div>
             </div>
-
-
+            <div class="col-md-3">
+                <figure>
+                    <img src="assets/images/pf.jpg" alt="Foto van Ruben Schadron" class="img-fluid">
+                </figure>
+            </div>
+        </div>
     </main>
 
+    <aside></aside>
 
-    <aside>
-
-    </aside>
-
-    <footer>&copy; Ruben Schadron | Student AP Hogeschool Antwerpen</footer>
+    <footer>&copy; Ruben Schadron | G_1IOT_D2 | Student AP Hogeschool Antwerpen</footer>
 </body>
 
 </html>

@@ -1,0 +1,195 @@
+:root {
+    --body-color: #E4E9F7;
+    --nav-color: #b7cffd;
+    --side-nav: #010718;
+    --text-color: #3e8b9c;
+    --footer-color: #377c8c6d;
+    --search-bar: #F2F2F2;
+    --search-text: #010718;
+    --siteref: #579090;
+    --table: black;
+}
+
+body.dark {
+    --body-color: #18191A;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: #B4D9D5;
+    --footer-color: #377c8c6d;
+    --siteref: #7cc4c4;
+    --table: white;
+}
+
+/* body */
+* {
+    font-family: "Poppins", sans-serif;
+    transition: all 2s ease;
+}
+
+body {
+    height: 100vh;
+}
+
+/* overal */
+/* Nav bar */
+.navbar, li .dropdown-menu {
+    background-color: var(--nav-color);
+}
+
+.dark-light i {
+    position: absolute;
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+/* Place of sun and moon */
+.dark-light {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px;
+}
+/* light */
+.dark-light i.sun {
+    opacity: 0;
+    pointer-events: none;
+}
+/* dark */
+.dark-light.active i.sun {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+/* Main text */
+main{
+    color: var(--text-color);
+}
+.siteref{
+    color: var(--siteref);
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    color: var(--footer-color);
+}
+
+
+
+/* index.html */
+/* carousel */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,.carousel-inner .carousel-item-next,.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,.carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,.carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.carousel-control-prev,.carousel-control-next {
+    width: auto;
+    height: auto;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+}
+
+
+/* Overzicht.html */
+.accordion-item,button#accordion {
+    background-color: var(--nav-color);
+}
+
+p,button#accordion {
+    color: var(--text-color);
+}
+
+/* map */
+#kmap { 
+    height: 400px; 
+}
+
+/* proandcons.html */
+table thead th{
+    color: var(--text-color);
+}
+
+@media (max-width: 576px) {
+    table td#pro, table td#cons{
+        color: var(--table);
+    }
+}
+
+@media (min-width: 576px) {
+    table td#pro  {background-color:#67e369}
+    table td#cons  {background-color:#e15349}
+}
+
+@media (min-width: 768px) {
+    table td#pro  {background-color:#50e452}
+    table td#cons  {background-color:#e2675e}
+}
+
+@media (min-width: 992px) {
+    table td#pro  {background-color:#5ae65d}
+    table td#cons  {background-color:#e3675f}
+}
+
+@media (min-width: 1200px) {
+    table td#pro  {background-color:#71e273}
+    table td#cons  {background-color:#e24e44}
+}
+
+@media (min-width: 1400px) {
+    table td#pro  {background-color:#5fe22b}
+    table td#cons  {background-color:#e2372b}
+}
+
+table th#th {
+    background-color: #63A6A6;
+}
