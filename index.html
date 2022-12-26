@@ -21,7 +21,11 @@
         crossorigin="anonymous"></script> <!-- Eigen geschreven CSS en javascript -->
         <link rel="stylesheet" href="css/style.css">
         <script src="js/dl.js" defer></script>
-        </head>
+            <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="js/live.js" defer></script>
+</head>
 
 <body class="p-3 container">
     <header>
@@ -347,6 +351,11 @@
                 </figure>
             </div>
         </div>
+        <section >
+            <h2>Waar mijn jeugdbeweging is.</h2>
+            <div id="rmap" class="col-12 mb-3"></div>
+        </section>
+
     </main>
 
     <aside></aside>

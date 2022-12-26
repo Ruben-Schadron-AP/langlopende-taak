@@ -2,7 +2,7 @@
     --body-color: #E4E9F7;
     --nav-color: #b7cffd;
     --side-nav: #010718;
-    --text-color: #3e8b9c;
+    --text-color: #0A2459;
     --footer-color: #377c8c6d;
     --siteref: #579090;
     --table: black;
@@ -12,7 +12,7 @@ body.dark {
     --body-color: #18191A;
     --nav-color: #242526;
     --side-nav: #242526;
-    --text-color: #B4D9D5;
+    --text-color: #0BD9D9;
     --footer-color: #377c8c6d;
     --siteref: #7cc4c4;
     --table: white;
@@ -149,6 +149,9 @@ p,button#accordion {
 
 /* map */
 #kmap { 
+    height: 400px; 
+}
+#rmap { 
     height: 400px; 
 }
 
